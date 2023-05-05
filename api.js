@@ -59,6 +59,7 @@ export class API {
     const API_URL = "https://api.wikitree.com/api.php";
 
     let formData = new FormData();
+    formData.append("appId", "AncestorLineExplorer");
     for (var key in postData) {
       formData.append(key, postData[key]);
     }
